@@ -1,0 +1,36 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sprint.minfi.uaa"
+    },
+    "jhipsterVersion": "6.5.0",
+    "applicationType": "uaa",
+    "baseName": "uaa",
+    "packageName": "com.sprint.minfi.uaa",
+    "packageFolder": "com/sprint/minfi/uaa",
+    "serverPort": "9999",
+    "authenticationType": "uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MzAyYTg1YWFmNGQyZjA0YWYzMmQxZDkxMDQzN2Q4NDgyMzFmMDBlNDVmYzRjYzIwYjM2MzI3YTczZDQyMTY3MjcxYTAzODE5YmY4Y2ExOWIxOWJkZGE4MWYwMDZmY2VjZjU0YzJiODIzYzNiZWZlOGU2ZWFlOWE1NGZlMDI2YjM=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true
+  }
+}
