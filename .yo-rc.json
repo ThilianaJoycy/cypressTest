@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.sprint.minfi.providers"
+    },
+    "jhipsterVersion": "6.5.0",
+    "applicationType": "microservice",
+    "baseName": "providers",
+    "packageName": "com.sprint.minfi.providers",
+    "packageFolder": "com/sprint/minfi/providers",
+    "serverPort": "8082",
+    "authenticationType": "uaa",
+    "uaaBaseName": "uaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "N2Y1YzM2MjNhNWRhMmE5OTBkMzBhODZjNzE3YWNhNTE3ZjBlYmEzNDg0MDc2YWU3ZGU4NmMwODRmYTMzMGY4OWM2Y2UyNzc0YmUxNTc3MWJjNzFlMTUyMjAzZDE3NDQyNGJhZjA3MDM5YWZmNTg3YzJiOWNiZjA5MmUzYzQ2NzU=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
