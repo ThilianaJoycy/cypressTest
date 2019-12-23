@@ -1,0 +1,38 @@
+{
+    "name": "Products",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "category",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "qtty",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "price",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "provider",
+            "fieldType": "Provider",
+            "fieldValues": "Casino,Dovv,Mahima,Select,Fokou"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20191220145010",
+    "entityTableName": "products_table",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "products"
+}

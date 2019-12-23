@@ -1,0 +1,9 @@
+entity Providers (Providers_Table) {
+
+	name String,
+    phone String,
+    email String,
+	locate String
+}
+
+microservice * with providers

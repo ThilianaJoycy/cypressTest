@@ -1,7 +1,8 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "packageName": "com.sprint.minfi.gateway"
+      "packageName": "com.sprint.minfi.gateway",
+      "microservicePath": "C:\\Users\\yan\\Desktop\\My APIs\\Modules\\providers"
     },
     "jhipsterVersion": "6.5.0",
     "applicationType": "gateway",
