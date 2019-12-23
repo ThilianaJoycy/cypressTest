@@ -1,0 +1,21 @@
+entity Products (Products_Table) {
+    id Integer,
+	name String,
+    category String,
+    qtty String,
+    price Integer,
+    provider Provider
+}
+
+entity Categories (Categories_Table) {
+    id Integer,
+	libelle String 
+}
+
+enum Provider {
+	Casino,
+    Dovv,
+    Mahima,
+    Select,
+	Fokou
+}
