@@ -26,7 +26,11 @@
         }
       },
       "prefix": "jhi",
-      "architect": {}
+      "architect": {
+        "test":{
+          "builder":"@angular-builders/jest:run"
+        }
+      }
     }
   },
   "defaultProject": "gateway",
