@@ -17,6 +17,13 @@ pipeline {
             steps {
                 sh 'npm run cypress:open'
             }
+            post {
+                always {
+              /* Use slackNotifier.groovy from shared library and provide current build result as parameter */
+                  slackNotifier(currentBuild.currentResult)
+                  cleanWs()
+                }
+            }
         }
         stage('Notify me') {
             when {
@@ -30,12 +37,6 @@ pipeline {
         }
         
     }
-    post {
-          always {
-              /* Use slackNotifier.groovy from shared library and provide current build result as parameter */
-                  slackNotifier(currentBuild.currentResult)
-                  cleanWs()
-          }
-   }
+    
 }
 
