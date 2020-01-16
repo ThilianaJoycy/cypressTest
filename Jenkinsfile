@@ -1,8 +1,11 @@
 pipeline {
     agent any
-    }
+    
     environment {
         CI = 'true'
+    }
+    tools {
+        maven 'Maven 3.6.2'
     }
     stages {
         stage('Build') {
@@ -17,13 +20,7 @@ pipeline {
             steps {
                 sh 'npm run cypress:open'
             }
-            post {
-                always {
-              /* Use slackNotifier.groovy from shared library and provide current build result as parameter */
-                  slackNotifier(currentBuild.currentResult)
-                  cleanWs()
-                }
-            }
+            
         }
         stage('Notify me') {
             when {
@@ -37,6 +34,7 @@ pipeline {
         }
         
     }
+    
     
 }
 
