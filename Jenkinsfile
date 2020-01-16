@@ -8,16 +8,7 @@ pipeline {
         maven 'Maven 3.6.2'
     }
     triggers {
-        when { branch "jhipster-registry" }
-        cron('H/15 * * * *')
-        when { branch "master" }
-        cron('H/17 * * * *')
-        when { branch "providers" }
-        cron('H/19 * * * *')
-        when { branch "products" }
         cron('H/21 * * * *')
-        when { branch "gateway" }
-        cron('H/25 * * * *')
     }
     stages {
         stage('Build') {
