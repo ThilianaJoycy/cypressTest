@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webapp" />
     <link rel="stylesheet" href="content/css/loading.css">
+
     <!-- jhipster-needle-add-resources-to-root - JHipster will add new resources here -->
 </head>
 <body>
@@ -83,6 +84,67 @@
             }
         }
     </script>
+    <!--importation de la librairie-->
+    <script src="content/gremlins.js-master/gremlins.min.js"></script> -->
+
+    <!-- //default config gremlins -->
+    <script>
+    gremlins.createHorde().unleash();
+    </script>
+
+    <!-- //Advanced config gremlins -->
+    <!-- <script>
+    var focusedClickerGremlin = gremlins.species
+  .clicker()
+  .clickTypes(['click'])
+  .canClick(function(element) {
+    return $(element).parents('.app-loading').length;
+    /**
+       Is the element this gremlin attempted to click
+       within our wanted scope? Let it proceed by
+       returning true! Otherwise, tell it to try again
+       by returning false.
+    **/
+  }).maxNbTries(5);
+
+var focusedFormFillerGremlin = gremlins.species
+  .formFiller()
+  .canFillElement(function(element) {
+    return $(element).parents('.fill-me-in').length;
+  }).maxNbTries(5);
+
+
+gremlins.createHorde() // First, create our horde 
+  .gremlin(focusedClickerGremlin)
+  .gremlin(focusedFormFillerGremlin)
+  .unleash();
+    </script> -->
+
+    <!-- //Custom config gremlins -->
+    <!-- <script>
+    
+    gremlins.createHorde() // first, create our horde 
+  .allGremlins()      // and enable all gremlins
+  .gremlin(function() {
+
+    // Now let's define our submission gremlin
+    var targetElement, availableForms;
+
+    availableForms = document.querySelectorAll('form'); // Let's get all available form elements on the page
+    targetElement = availableForms[Math.floor(Math.random()*availableForms.length)]; // Then let's grab a random element from those results
+
+    // Now, we create a dummy submission event
+    var evt = document.createEvent('HTMLEvents');  // Create an event container
+    evt.initEvent('submit');  // Define our event as a submit event
+    targetElement.dispatchEvent(evt);  // Finally, dispatch the submit event onto our randomly selected form
+
+    // We also want to make sure to log this event like others gremlins do!      
+    console.log('gremlin submit ', targetElement);
+  })
+  .unleash();
+    </script> -->
+
+    <!-- <script data-main="main.js" src="require.js"></script> -->
     <!-- uncomment this for adding service worker
         <script>
             if ('serviceWorker' in navigator) {
